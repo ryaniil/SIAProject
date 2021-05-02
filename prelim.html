@@ -1,0 +1,105 @@
+<html>
+    <head><title>Prelim Exam</title>
+        <script src = "prelim.js" type ="text/javascript"></script>
+    </head>
+    <body>
+        <div class = "input" style="height: 500px; width: 300 px; float:left; margin: 30px;">
+            <p>
+                <label>Item Name:</label>
+                <input id="itemName" type="text">
+            </p>
+            <p>
+                <label>Item Type:</label>
+                <select id="itemType">
+                    <option value="">Choose</option>
+                    <option value="Weapon">Weapon</option>
+                    <option value="Shield">Shield</option>
+                    <option value="Armor">Armor</option>
+                </select>
+            </p>
+            <p>
+                <label>Add Effect:</label>
+                <select id="itemEffect">
+                    <option value="">Choose</option>
+                    <option value="Attack">Attack</option>
+                    <option value="Defense">Defense</option>
+                    <option value="HP">HP</option>
+                </select>
+                <label>Amount:</label>
+                <input id="itemEffectAmount" type="text" style ="width: 100px;">
+            </p>
+
+            <button id="addItem" onclick="addItem()" style="height:50px; width:100px; margin-left: 60px;">Add Item</button>
+        </div>
+
+        <div class="output" style="height: 500px; width: 300 px; float:left; margin: 30px;">
+            <select id="itemList" multiple style="width: 150px;" onclick="displayItem()">
+                
+            </select>
+        </div>
+
+        <div class="itemSelect" style="height: 500px; width: 300 px; float:left; margin: 30px;">
+            <p>
+                Item Details
+            </p>
+            <p>
+                <label>Item Name:</label>
+                <label id="iname"></label>
+            </p>
+            <p>
+                <label>Item Type:</label>
+                <label id="itype"></label> 
+            </p>
+            <p>
+                <label>Item Effect:</label>
+                <label id="ieffect"></label> 
+                <label id="ieffectam"></label> 
+            </p>
+            <button id="equipItem" onchange="equip()">Equip Item</button>
+
+            <br>
+            <br>
+
+            <p>
+                Equipped Items:
+            </p>
+            <p>
+                <label>Weapon:</label>
+                <label id="equipweap"></label>
+            </p>
+            <p>
+                <label>Armor:</label>
+                <label id="equiparmor"></label>
+            </p>
+            <p>
+                <label>Shield:</label>
+                <label id="equipshield"></label>
+            </p>
+
+            <br>
+            <br>
+
+            <p>
+                Total Stats:
+            </p>
+            <p>
+                <label>Attack:</label>
+                <label id="statattk"></label>
+            </p>
+            <p>
+                <label>Defense:</label>
+                <label id="statdef"></label>
+            </p>
+            <p>
+                <label>HP:</label>
+                <label id="stathp"></label>
+            </p>
+
+            
+        </div>
+
+       
+
+    </body>
+    
+</html>
